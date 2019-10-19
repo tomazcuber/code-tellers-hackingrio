@@ -1,11 +1,11 @@
 >Esse é um arquivo de template e tem como o intuito prover uma breve apresentação de seu projeto para avaliadores e mentores. Sinta-se à vontade para editar os tópicos e títulos de acordo com seu gosto ou até mesmo para deletá-lo ou sobrescreve-lo caso o queira. Cheque também o arquivo [repositorio.md](https://github.com/hackingrio/template/blob/master/repositorio.md) para saber o que acontecerá com esse repositório depois que o evento acabar.
 
 # Nome do produto - 2019
-### Nome do grupo / Nome do cluster
+### Code Tellers / Segurança, Cybersecurity & IOT
 
 #### Apresentação 
 
-Use essa seção para falar sobre as motivações de seu time e de forma breve qual o produto que estão trabalhando. Se possível forneça **o que** seu produto é, por exemplo: Um app, uma aplicação web, gadget, dentre outros.
+Nosso objetivo é desenvolver uma plataforma interativa na qual através de uma experiencia lúdica, adolescentes possam aprender a proteger seus dados pessoais e garantir sua privacidade na Internet. 
 
 #### O Produto
 
