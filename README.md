@@ -13,4 +13,4 @@ Entre em mais detalhes sobre seu produto, levantando pontos positivos, o porquê
 
 #### Informações adicionais 
 
-Forneça informações adicionais, adicione novos tópicos ou subtópicos. Use esse arquivo como um guia rápido para manter claro os objetivos de seu projeto para os demais integrantes. Manter o foco conjunto de forma coesa lhe ajudará a criar um produto mais *sólido*.
+Para melhor visualização do código-fonte utilizar a ferramenta https://twinery.org/, que é o framework base do projeto.
