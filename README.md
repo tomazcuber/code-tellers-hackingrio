@@ -9,8 +9,9 @@ Nosso objetivo é desenvolver uma plataforma interativa na qual através de uma 
 
 #### O Produto
 
-Entre em mais detalhes sobre seu produto, levantando pontos positivos, o porquê dele ser inovador, relevante para o mercado nacional e para a cidade do Rio de Janeiro.
 
 #### Informações adicionais 
+
+O aplicativo principal está no arquivo Code-Tellers - _Uma História de Segurança_ (DEMO).html. A pasta securitygames contém uma landing page no arquivo index.html.
 
 Para melhor visualização do código-fonte utilizar a ferramenta https://twinery.org/, que é o framework base do projeto.
