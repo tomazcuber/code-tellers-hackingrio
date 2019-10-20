@@ -9,6 +9,10 @@ Nosso objetivo é desenvolver uma plataforma interativa na qual através de uma 
 
 #### O Produto
 
+Uma plataforma interativa na qual através de uma experiencia lúdica, adolescentes possam aprender a proteger seus dados pessoais e garantir sua privacidade na Internet.
+
+
+Problemas de segurança tratados no jogo: Phishing, Softwares Maliciosos, Exposição excessiva, Sexting, Cyberbullying, Invasão de privacidade, entre outros.
 
 #### Informações adicionais 
 
