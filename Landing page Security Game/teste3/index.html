@@ -114,7 +114,7 @@ height: 50px;
 padding: 10px;
 border: 10px solid FFFFFF;
 font-style: normal;
-font-size: 18px;
+font-size: 15px;
 line-height: 28px;
 text-indent: 3px;
 color: #FFFFFF;
@@ -137,9 +137,10 @@ Bem vinde a escola nova!
 &#39;&#39;Estranho&#39;&#39;
 “Hey, deixa teu whats pra gente te colocar no grupo da sala!”
 
-[[&quot;Claro, anota ai!&quot; -&gt;pegadinha]]</tw-passagedata><tw-passagedata pid="2" name="pegadinha" tags="" position="500,297.5" size="100,100">“Olha só! Sua vida social pode ter aumentado um pouco, entretanto, você se tornou mais vulnerável ao informar seu número a um desconhecido. Tome cuidado para suas próximas decisões não te colocarem em risco. FIQUE ATENTO A SUA MENTAL! Sempre que ela chegar a zero, você perde o jogo. Dano nas outras barras afeta a saúde mental também, cuidado!&quot;
+[[&quot;Claro, anota ai!&quot; -&gt;pegadinha][$cyberSecurity to $cyberSecurity -1]]</tw-passagedata><tw-passagedata pid="2" name="pegadinha" tags="" position="500,297.5" size="100,100">&#39;&#39;DEVs&#39;&#39;
+“Olha só! Sua vida social pode ter aumentado um pouco, entretanto, você se tornou mais vulnerável ao informar seu número a um desconhecido. Tome cuidado para suas próximas decisões não te colocarem em risco. A cada decisão que comprometa um dos seus atributos na barra esquerda, vc perderá um de seus pontos. Como estamos num tutorial, vamos te devolver o que vc acabou de perder, tá?&quot;
 
-[[&quot;Pode deixar, tomarei mais cuidado!&quot; -&gt;inicio]]</tw-passagedata><tw-passagedata pid="3" name="inicio" tags="" position="711,431.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
+[[&quot;Pode deixar, tomarei mais cuidado!&quot; -&gt;inicio][$cyberSecurity to $cyberSecurity +1]]</tw-passagedata><tw-passagedata pid="3" name="inicio" tags="" position="711,431.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Os colegas novos te receberam muito bem. Você se enturmou rápido. Já existem pessoas que você pode chamar de amigas, bom trabalho! A saudade da sua antiga vida ainda existe, mas você supera aos poucos…
 
 &#39;&#39;Bianca&#39;&#39;
@@ -178,17 +179,17 @@ De fato, sua atenção se voltava para uma notificação estranha na tela. Sua p
 “Está tudo bem? Parece que algo está te preocupando… Aconteceu algo?”
 
 &#39;&#39;Stanley&#39;&#39;
-Você não sabe como contar para Bianca. Você olha rapidamente pra tela das suas notificações e vê a mensagem “POR FAVOR, EU PRECISO DA SUA AJUDA...” Você ainda não abriu a mensagem, mas não importa… É a pessoa que você gosta, e você sabe que ela não pediria ajuda se não fosse algo REALMENTE sério. Bianca parece preocupada, entretanto, você não sabe se deve falar com sua amiga sobre o problema da pessoa especial, afinal, você não gostaria que contassem seus problemas por ai... Você sente que é uma quebra de confiança tremenda.
+Você não sabe como contar para Bianca. Você olha rapidamente pra tela das suas notificações e vê a mensagem “POR FAVOR, EU PRECISO DA SUA AJUDA...” Você ainda não abriu a mensagem, mas não importa... É a pessoa que você gosta, e você sabe que ela não pediria ajuda se não fosse algo REALMENTE sério. Bianca parece preocupada, entretanto, você não sabe se deve falar com sua amiga sobre o problema da pessoa especial, afinal, você não gostaria que contassem seus problemas por ai... Você sente que é uma quebra de confiança tremenda.
 
-[[Não contar para a Bianca -&gt;caminho2.1]] 
+[[Não contar para a Bianca -&gt;caminho2.1][$socialLife to $socialLife +1]] 
 
-[[Contar para a Bianca mesmo assim -&gt;caminho2.2]] </tw-passagedata><tw-passagedata pid="7" name="caminho1a" tags="" position="711,730.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
+[[Contar para a Bianca mesmo assim -&gt;caminho2.2][$socialLife to $socialLife -1]] </tw-passagedata><tw-passagedata pid="7" name="caminho1a" tags="" position="711,730.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Vocês estavam se divertindo muito no provador, vestindo roupas da loja que não poderiam pagar. Você pensou em tirar fotos, mas se sentiu insegure com seu corpo.
 
 &#39;&#39;Bianca&#39;&#39;
 “Que isso, vamos lá! EU tiro!!”
 
-[[&quot;Tudo bem, tudo bem… Mas tira do meu lado bom pelo menos.&quot; -&gt;caminho1.1]] 
+[[&quot;Tudo bem, tudo bem… Mas tira do meu lado bom pelo menos.&quot; -&gt;caminho1.1][$cyberSecurity to $cyberSecurity -1]] 
 
 [[&quot;Não sei miga, meu corpo é meio esquisito pra isso...&quot; -&gt;caminho1.2]] </tw-passagedata><tw-passagedata pid="8" name="caminho1.1" tags="" position="521,864.5" size="100,100">&#39;&#39;Bianca&#39;&#39;
 “Você quer que eu tire com o meu celular ou com o seu celular?”
@@ -211,7 +212,7 @@ Vocês se despediram no ponto de ônibus com um abraço apertado.
 &#39;&#39;Stanley&#39;&#39;
 Você voltou para casa saltitando. O que responder para aquela pessoa? Você decidiu não esperar. No ônibus mesmo, pegou o celular. Um “Olá, também estou com saudades!” Seria o suficiente?
 
-[[caminho1.8]]</tw-passagedata><tw-passagedata pid="10" name="caminho1.3" tags="" position="376,684.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
+[[caminho1.8][$socialLife to $socialLife -1]]</tw-passagedata><tw-passagedata pid="10" name="caminho1.3" tags="" position="376,684.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você se sentiria mais segura, afinal, se essas fotos vazassem, seria sua ruína. Mesmo sua amiga, você precisava se garantir, afinal, vocês se conhecem há muito pouco tempo. Você tinha a impressão que Bianca olhava para a tela com olhar sério, mas provavelmente era sua típica insegurança. Por qual motivo ela olharia séria para a tela do seu celular?
 
 &#39;&#39;Bianca&#39;&#39;
@@ -259,7 +260,7 @@ Suas fotos no provador estavam lá. Bianca havia colocado, diversas piadas foram
 Suas fotos viraram memes, stickers, estavam em todos os lugares.
 Seus olhos se encheram de lágrimas.
 
-[[Deprimide, você não sabe o que fazer com essa situação... -&gt;caminho1.5]]</tw-passagedata><tw-passagedata pid="12" name="caminho2.1" tags="" position="832,733.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
+[[Deprimide, você não sabe o que fazer com essa situação... -&gt;caminho1.5][$cyberSecurity to $cyberSecurity -1]]</tw-passagedata><tw-passagedata pid="12" name="caminho2.1" tags="" position="832,733.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você decidiu não contar para Bianca. Ela insistiu um pouco, mas você deu um jeito de desconversar do assunto. Ela percebeu sua pressa, e encerrou rápido o passeio, afinal, está difícil ter um momento agradável com você, preocupade o tempo todo com algo na tela do seu celular. Você está ansiose demais para aproveitar qualquer coisa e isso é um fato que tanto você quanto sua amiga podem afirmar.
 
 &#39;&#39;Bianca&#39;&#39;
@@ -329,10 +330,10 @@ Você olha fixamente para a tela do aplicativo, a pessoa especial não está onl
 [[&quot;Não tenho dinheiro, desculpa :/.&quot; -&gt;caminho2.7]] </tw-passagedata><tw-passagedata pid="20" name="caminho2.7" tags="" position="1008,1297.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você percebe algo estranho na conversa da sua pessoa querida. Essa história toda de pais em acidente de carro… Precisar de dinheiro… Parece muito improvável. Você sabe que ele tem família na cidade vizinha… Por qual motivo precisaria de dinheiro? Ninguém pode ajudar? Além disso, ninguém está comentando sobre, nenhuma noticia… Nem a prima dessa pessoa falou algo a respeito. Tudo parece muito estranho… Você está confuse nesse momento, dormir parece a melhor opção nesse momento.
 
-[[Durante a noite, você acorda com seu celular apitando sem parar... -&gt;caminho2.7a]] </tw-passagedata><tw-passagedata pid="21" name="caminho2.8" tags="" position="783,1447.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
+[[Durante a noite, você acorda com seu celular apitando sem parar... -&gt;caminho2.7a][$cyberSecurity to $cyberSecurity +1]] </tw-passagedata><tw-passagedata pid="21" name="caminho2.8" tags="" position="783,1447.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Ele mandou um boleto que você prontamente pagou sem se preocupar com o valor. Você encaminhou o comprovante de transferência para ele. Você recebeu um EMOJI sorridente  e um caloroso obrigade…. Como é bom sentir o coração aquecer ao ajudar a pessoa que tanto gosta, não é mesmo? Você adormeceu com um belo sorriso no rosto.
 
-[[Você calmamente caiu no sono... -&gt;caminho2.8a]]</tw-passagedata><tw-passagedata pid="22" name="caminho2.8a" tags="" position="656,1296.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
+[[Você calmamente caiu no sono... -&gt;caminho2.8a][$cyberSecurity to $cyberSecurity -1]]</tw-passagedata><tw-passagedata pid="22" name="caminho2.8a" tags="" position="656,1296.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você acordou sobressaltade com quantidade de notificações no seu celular... Muitas mensagens no grupo da turma. Você ainda está grogue de sono, tenta acompanhar as quase centenas de mensagens não lidas.
 Bel - “Gente... Cuidado com essas coisas”
 Samu - “Muito dificil dizer não pros amigos, né. Não da p saber.”
@@ -347,7 +348,7 @@ Samu – “Roubaram o celular dele.”
 [[Em choque, lhe cai a ficha do que aconteceu... -&gt;caminho2.8b]]</tw-passagedata><tw-passagedata pid="23" name="caminho2.8b" tags="" position="656,1446.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Obviamente, você se sentiu estúpide. Você não teve coragem de contar para seus colegas que caiu no golpe. Um misto de vergonha e indignação tomaram seu corpo. Enfiou a cabeça no travesseiro e quis gritar.
 
-[[caminho1.7]] </tw-passagedata><tw-passagedata pid="24" name="caminho2.4a" tags="" position="1083,1147.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
+[[Você voltou a dormir para se acalmar. -&gt;caminho1.7][$mentalHealth to $mentalHealth -1]] </tw-passagedata><tw-passagedata pid="24" name="caminho2.4a" tags="" position="1083,1147.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você acordou sobressaltade com quantidade de notificações no seu celular… Muitas mensagens no grupo da turma. Você ainda está grogue de sono, tenta acompanhar as quase centenas de mensagens não lidas.
 Bel - “Gente… Cuidado com essas coisas”
 Samu - “Muito dificil dizer não pros amigos, né. Não da p saber.”
@@ -378,7 +379,7 @@ Samu – “Roubaram o celular dele.”
 [[Ainda em choque, você percebe o que aconteceu... -&gt;caminho2.7b]] </tw-passagedata><tw-passagedata pid="26" name="caminho2.7b" tags="" position="1008,1597.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você foi perspicaz em perceber rapidamente as discrepâncias na história. Os furos eram óbvios demais, e por isso, você se guiou pelo caminho da lógica. Respirou aliviade. Entretanto, permanece preocupade com Kim, afinal, sua pessoa querida ainda sofreu um assalto. Como estará passando?
 
-[[caminho1.6]]</tw-passagedata><tw-passagedata pid="27" name="StoryCaption" tags="" position="905,2.5" size="100,100">/* Inclusões */
+[[caminho1.6][$mentalHealth to $mentalHealth +1]]</tw-passagedata><tw-passagedata pid="27" name="StoryCaption" tags="" position="905,2.5" size="100,100">/* Inclusões */
 
 &lt;&lt;include [[charFace]]&gt;&gt;
 &lt;&lt;include [[barraSaudeMental]]&gt;&gt;
@@ -389,17 +390,17 @@ Você foi perspicaz em perceber rapidamente as discrepâncias na história. Os f
 &lt;&lt;for $i to 0; $i &lt; $socialLife; $i++&gt;&gt;&amp;#9787;&lt;&lt;/for&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="caminho1.5" tags="" position="210,722.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você está arrasade com a traição da sua amiga. Você tem motivo. Ela te machucou, invadiu sua privacidade… Você se questiona o motivo, mas a realidade é que não consegue entender. Você se arrepende, não deveria ter permitido a exposição dessa forma, tampouco deveria ter permitido que ela chegasse perto do seu celular.. Agora você entende isso. Entretanto, o preço a pagar é muito alto. Você recebe piadas e memes com suas fotos todos os dias… Você não tem coragem de falar com Kim. Você se arrepende, se culpa... Você se sente só. 
 
-[[Vou para o computador. -&gt;caminho3]]
+[[Vou para o computador. -&gt;caminho3][$mentalHealth to $mentalHealth -1]]
 </tw-passagedata><tw-passagedata pid="32" name="caminho1.6" tags="" position="401,984.5" size="100,100">&#39;&#39;Stanley&#39;&#39; 
 O cansaço bate no seu corpo. Você está com muita ansiedade a preocupação com Kim te tira a calma… Como está a sua pessoa especial? Mesmo com a sensação de alívio por não sofrer o phishing, muitas coisas passam na sua cabeça... Você decide espairecer um pouco sua mente, ler uns conteúdos que você gosta...
 
 [[Vou para o computador. -&gt;caminho3]]</tw-passagedata><tw-passagedata pid="33" name="caminho1.7" tags="" position="201,956.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
-Você está com vergonha pelo golpe que tomou. Phishing? Francamente. Você precisa de mais atenção, &lt;&lt;print $nome&gt;&gt;. Agora você sabe disso. Aprendeu a lição, não foi? Sua cabeça está uma bagunça… Preocupação com Kim, o medo, a vergonha pelo que passou… Mas nada disso importa agora, você decidiu espairecer.
+Você está com vergonha pelo golpe que tomou. Phishing? Francamente. Você precisa de mais atenção, &lt;&lt;print $nome&gt;&gt;. Agora você sabe disso. Aprendeu a lição, não foi? Sua cabeça está uma bagunça... Preocupação com Kim, o medo, a vergonha pelo que passou… Mas nada disso importa agora, você decidiu espairecer.
 
 [[Vou para o computador. -&gt;caminho3]]</tw-passagedata><tw-passagedata pid="34" name="caminho1.8" tags="" position="709,1007.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
-Você chegou em casa do rolê. Sua cabeça está leve como uma pluma. É bom se divertir, não é mesmo? Você decidiu que merecia desacelerar mais um pouco…Afinal, qual seria o problema?
+Você chegou em casa do rolê. Sua cabeça está leve como uma pluma. É bom se divertir, não é mesmo? Você decidiu que merecia desacelerar mais um pouco... Afinal, qual seria o problema?
 
-[[Vou para o computador. -&gt;caminho3]]</tw-passagedata><tw-passagedata pid="35" name="caminho1.9" tags="" position="334,452.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
+[[Vou para o computador. -&gt;caminho3][$cyberSecurity to $cyberSecurity +1]]</tw-passagedata><tw-passagedata pid="35" name="caminho1.9" tags="" position="334,452.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você chegou do rolê com a mente cansada. Bianca agiu de forma estranha e grosseira. Ela parecia incomodada com algo que você não entende bem o motivo. Pois bem, para que pensar isso hoje, não é mesmo? Vá distrair sua mente.
 
 [[Vou para o computador. -&gt;caminho3]]</tw-passagedata><tw-passagedata pid="36" name="caminho3" tags="" position="1419,465.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
@@ -423,7 +424,7 @@ https://www.beehance.net/darklordarksid?trackingdarklord
 
 [[Chamar no privado. -&gt;caminho3.1.2]] 
 
-[[Olhar o portfólio para matar o tempo. -&gt;caminho3.1.5]]</tw-passagedata><tw-passagedata pid="38" name="caminho3.2" tags="" position="1616,326.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
+[[Olhar o portfólio para matar o tempo. -&gt;caminho3.1.5][$cyberSecurity to $cyberSecurity -1]]</tw-passagedata><tw-passagedata pid="38" name="caminho3.2" tags="" position="1616,326.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você está precisando desabafar e decide procurar alguém no chat do fórum para conversar. Você fica feliz ao ver que seu webamigo de muito tempo, o #S1gFr1ed está online.
 
 [[Chamar o #S1gFr1ed para conversar. -&gt;caminho3.2.1]] 
@@ -441,7 +442,7 @@ Sei que nos afastamos por um tempo, entretanto, saiba que estou torcendo sempre 
 [[Descartar e chamar no privado. -&gt;caminho3.1.2]]</tw-passagedata><tw-passagedata pid="40" name="caminho3.1.2" tags="" position="1507,802.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você decide chamá-lo no privado mas ele não está online no momento. Você se entristece, pois quer muito conversar com alguém. Entretanto, você sente curiosidade em olhar o portfólio dele para tentar tirar a cabeça dos problemas… Talvez dormir um pouco ou passear sejam boas opções também.
 
-[[Olhar o portfólio para matar o tempo. -&gt;caminho3.1.5]]
+[[Olhar o portfólio para matar o tempo. -&gt;caminho3.1.5][$cyberSecurity to $cyberSecurity -1]]
 
 [[Abrir chat do forum e procurar alguém pra conversar. -&gt;caminho3.2]]
 
@@ -450,7 +451,9 @@ Você decide chamá-lo no privado mas ele não está online no momento. Você se
 Você enviou a mensagem com os olhos marejados. Mesmo com vontade de chamá-lo no privado, você sabe que não o conhece pessoalmente e é melhor se precaver e não trocar dados com estranhos na internet. Você optou não clicar no link suspeito, você não conhece a procedência e ele pode vir acompanhado com código malicioso, que pode infectar seu computador com vírus. Eles podem roubar seus dados, informações bancárias, adquirir as informações de localização e acesso do seu computador e até apagar os dados do seu HD!
 
 [[Sair um pouco do celular. -&gt;final]]</tw-passagedata><tw-passagedata pid="42" name="charFace" tags="" position="1023,101.5" size="100,100">[img[http://www.cassioaugusto.com.br/securitygame/imagens/baetoriceface.png]]</tw-passagedata><tw-passagedata pid="43" name="final" tags="" position="1523,1035.5" size="100,100">Muito obrigado por ter jogado o demo do nosso jogo &quot;Uma História de Segurança&quot;! Existem diversos caminhos expalhados pela história. Por que não clicar no botão de reinicio na barra a esquerda e explorar um pouco mais?</tw-passagedata><tw-passagedata pid="44" name="caminho3.1.5" tags="" position="1684,834.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
-O link na verdade era uma requisição de download. Um arquivo relativamente pequeno, entretanto, infectou seu computador. Oras &lt;&lt;print $nome&gt;&gt;, não se clica em links que não se conhece! Eles podem trazer códigos maliciosos consigo e infectar sua máquina. Esses códigos podem roubar seus dados, informações bancárias, adquirir as informações de localização e acesso do seu computador e até apagar os dados do seu HD! Por sorte, você tem um antimalware que detectou na hora e impediu a entrada desse vírus no seu computador. Antimalwares são softwares com a função de proteger sua máquina de infecções e realizar varreduras constantes para verificar que não há nada nas pastas do sistema.  Mantenha sempre atualizado! Depois de tantas emoções, chega de computador por hoje!</tw-passagedata><tw-passagedata pid="45" name="caminho3.2.1" tags="" position="1785,324.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
+O link na verdade era uma requisição de download. Um arquivo relativamente pequeno, entretanto, infectou seu computador. Oras &lt;&lt;print $nome&gt;&gt;, não se clica em links que não se conhece! Eles podem trazer códigos maliciosos consigo e infectar sua máquina. Esses códigos podem roubar seus dados, informações bancárias, adquirir as informações de localização e acesso do seu computador e até apagar os dados do seu HD! Por sorte, você tem um antimalware que detectou na hora e impediu a entrada desse vírus no seu computador. Antimalwares são softwares com a função de proteger sua máquina de infecções e realizar varreduras constantes para verificar que não há nada nas pastas do sistema.  Mantenha sempre atualizado! Depois de tantas emoções, chega de computador por hoje!
+
+[[Sair do computador um pouco. -&gt;final]] </tw-passagedata><tw-passagedata pid="45" name="caminho3.2.1" tags="" position="1785,324.5" size="100,100">&#39;&#39;Stanley&#39;&#39;
 Você chama seu querido amigo para conversar, que prontamente responde.
 
 &#39;&#39;#Bunny_Stanley&#39;&#39;
@@ -473,7 +476,7 @@ Você olhou na sua lista de amigos privados, entretanto, apenas pessoas não mui
 [[Sair do computador por um tempo. -&gt;final]]</tw-passagedata><tw-passagedata pid="47" name="caminho3.2.1a" tags="" position="1816,147.5" size="100,100">&#39;&#39;#S1gFr1ed&#39;&#39;
 O de sempre… Tem certeza que não quer me contar nada?
 
-[[Tenho. -&gt;caminho3.2.1c]]
+[[Tenho. -&gt;caminho3.2.1c][$cyberSecurity to $cyberSecurity +1]]
 
 [[&quot;Estou exauste... Meus sentimentos tão confusos demais.&quot; -&gt;caminho3.2.1b]] </tw-passagedata><tw-passagedata pid="48" name="caminho3.2.1b" tags="" position="1998,204.5" size="100,100">&#39;&#39;S1gFr1ed&#39;&#39;
 Oh não… Ansiedade de novo?
@@ -488,7 +491,7 @@ Vamos lá… Sei que não é seu habito, mas se abre pra mim.
 Você ficou em dúvida se deveria ou não falar com seu webamigo… Mas seu peito doia, você precisava conversar com alguém sobre o que estava acontecendo.
 
 
-[[&quot;Eu estou decepcionade demais com a uma amiga minha, a Bianca&quot; -&gt;caminho3.2.1d]]
+[[&quot;Eu estou decepcionade demais com a uma amiga minha, a Bianca&quot; -&gt;caminho3.2.1d][$cyberSecurity to $cyberSecurity -1]]
 
 [[Sair do computador por um tempo. -&gt;final]] 
 </tw-passagedata><tw-passagedata pid="49" name="caminho3.2.1c" tags="" position="1983,351.5" size="100,100">&#39;&#39;#S1gFr1ed&#39;&#39;
